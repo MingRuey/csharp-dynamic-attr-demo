@@ -28,8 +28,7 @@ foreach (var s in lstModelStrings)
 
 or add properties dynamically at runtime of a class:
 ```c#
-var new_animal = "Dog"
-my_model.{new_animal}Count = 5 // i.e., my_model.DogCount = 5, how to do this?
+my_model.DogCount = 5 // i.e., we don't define DogCount in class Model. How to do this?
 ```
 spoiler: it's not doable without changing the class type to dynamic object.
 
